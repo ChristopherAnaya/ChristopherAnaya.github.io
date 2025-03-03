@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(to right,  #2432b1, #41a0f3, #2432b1);
+  }
+  
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+main {
+    margin-top: 40px; /* Adjust based on header height */
+  }
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav > ul > li {
+    display: inline;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white
+}
+
+#Contact ul li img {
+    width: 40px; /* Make images uniform */
+    height: auto;
+}
+
+#Contact ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+}
+
+#ProjectsCertifications div {
+    background-color: #423d3d;
+    width: 30%;
+    height: 300px;
+    margin: 10% ;
+}
+
+#ProjectsCertifications{
+    display: flex;
+    
+}
