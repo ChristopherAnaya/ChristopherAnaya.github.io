@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
-    background: linear-gradient(to right,  #2432b1, #41a0f3, #2432b1);
+    background: #2432b1
   }
   
 
@@ -47,14 +51,40 @@ nav > ul > li > a {
     justify-content: center;
 }
 
-#ProjectsCertifications div {
-    background-color: #423d3d;
-    width: 30%;
-    height: 300px;
-    margin: 10% ;
+.Certification {
+    position: relative;
+    width: 150px;
+    height: 240px;
+    perspective: 1000px;
 }
 
-#ProjectsCertifications{
+.Certification-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+.Certification:hover .Certification-inner {
+    transform: rotateY(180deg);
+}
+
+.Certification-front, .Certification-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
     display: flex;
-    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+}
+
+.Certification-back {
+    transform: rotateY(180deg);
+    background-color: #f4f4f4; /* Change color for the back */
 }
