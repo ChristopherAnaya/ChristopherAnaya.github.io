@@ -40,7 +40,7 @@ nav > ul > li > a {
 }
 
 #Contact ul li img {
-    width: 40px; /* Make images uniform */
+    width: 40px; 
     height: auto;
 }
 
@@ -51,40 +51,43 @@ nav > ul > li > a {
     justify-content: center;
 }
 
-.Certification {
-    position: relative;
-    width: 150px;
-    height: 240px;
-    perspective: 1000px;
-}
-
-.Certification-inner {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: transform 0.6s ease;
-}
-
-.Certification:hover .Certification-inner {
-    transform: rotateY(180deg);
-}
-
-.Certification-front, .Certification-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
+.projectscertifications {
     display: flex;
+    flex-direction: row;
+    width: 100%
+}
+
+.certification {
+    width: 200px;
+    height: 275px;
+    background-color: white;
+    display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    background-color: white;
-    padding: 10px;
+
 }
 
-.Certification-back {
-    transform: rotateY(180deg);
-    background-color: #f4f4f4; /* Change color for the back */
+.certification:hover {
+    width: 300px;
+    height: 275px;
+}
+
+.certification img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.certification hr {
+    background-color:black;
+    height: 2px;
+    width: 200px;
+    border-color: black;
+}
+
+.certification p {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10px;
+    font-size: 25px;
 }
